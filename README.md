@@ -13,6 +13,23 @@ Windows (with PowerShell) :
   irm https://deno.land/install.ps1 | iex
 ```
 
+## Edit Array of URL List
+Before you can download, please add array of url you wanted to download : 
+```typescript
+  const urlList = [
+    "link_to_media_unpad.pdf",
+    "link_to_media_unpad_2.pdf",
+  ]
+```
+change to :
+```typescript
+  const urlList = [
+    "https://media.unpad.ac.id/path_you_want_to_download",
+    "https://media.unpad.ac.id/path_you_want_to_download_2.pdf",
+  ]
+```
+
+## Run File
 then run the `main.ts` file with all permission :
 ```bash
   deno run -A main.ts
